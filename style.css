@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;800;900 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    max-width: 1920px;
+    width: 100%;
+    
+}
+
+.top_header{
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #F88524;
+    align-items: center;
+}
+
+.big_screen--browser{
+    margin-right: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.big_screen--browser nav{
+    display: 0;
+}
+
+.big_screen--browser ul{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.big_screen--browser li{
+    color: white;
+    font-size: 2rem;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.big_screen--browser li:hover{
+    color: #1760B3;
+    cursor: pointer;
+}
+
+.big_screen--browser button{
+    color: white;
+    background-color: #1760B3;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 2vw;
+}
+
+.big_screen--browser button:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.menu_mobile{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.banner_top{
+    overflow: hidden;
+    background-color: #1760B3;
+    background-image: url('img/novos+canais+claro+tv+2013.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+}
+
+.banner_top--text{
+    height: 100%;
+    color: white;
+    margin-left: 10px;
+    width: 40%;
+}
+
+.banner_top--text h2{
+    font-size: 2rem;
+    margin-top: 200px;
+    font-weight: 900;
+}
+
+.banner_top--text p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.banner_top--button{
+    align-items: baseline;
+    display: flex;
+}
+
+.header_button--contact{
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin-top: 35px;
+    color: white;
+    background-color: #F88524;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 1vw;
+}
+
+.header_button--test{
+    position: relative;
+    top: 0.5vh;
+    right: -1vw;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #F88524;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.header_button--contact:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+
+.header_button--test:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+
+main{
+    display: flex;
+}
+
+.container_services{
+    align-items: center;
+    text-align: center;
+}
+
+.container_services article{
+    font-size: 1.5rem;
+}
+
+@media(max-width:720px){
+
+    header{
+        min-width: 256px;
+    }
+
+    .big_screen--browser{
+        display: none;
+    }
+
+    .menu_mobile{
+        cursor: pointer;
+        margin-right: 20px;
+        display: inline;
+    }
+
+    .banner_top{
+        overflow: hidden;
+        background-color: darkblue;
+        background-image: url('img/canais.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 700px;
+    }
+
+    .banner_top--button{
+        margin-left: 15vw;
+    }
+
+    .banner_top--text{
+        text-align: center;
+        height: 100%;
+        color: white;
+        margin-left: 10px;
+        width: 80%;
+    }
+    
+    .banner_top--text h2{
+        font-size: 1.5rem;
+        margin-top: 300px;
+    }
+}
