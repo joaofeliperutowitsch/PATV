@@ -38,6 +38,10 @@ header{
     transition: all .5s;
 }
 
+.big_screen--browser a{
+    text-decoration: none;
+}
+
 .big_screen--browser li{
     color: white;
     font-size: 2rem;
@@ -202,7 +206,7 @@ main{
 }
 
 button:focus ~ .top_menu--ul{
-    height: 300px;
+    height: 100%;
 }
 
 @media(max-width:720px){
@@ -234,6 +238,7 @@ button:focus ~ .top_menu--ul{
     }
 
     .big_screen--browser li{
+       
         width: 100%;
     }
 
