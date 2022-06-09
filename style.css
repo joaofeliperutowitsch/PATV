@@ -14,11 +14,15 @@ header{
 }
 
 .top_header{
+    max-width: 1920px;
+    position: fixed;
+    width: 100%;
     height: 100px;
     justify-content: space-between;
     display: flex;
     background-color: #F88524;
     align-items: center;
+    z-index: 1;
 }
 
 .logo{
@@ -44,7 +48,7 @@ header{
 
 .big_screen--browser li{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     list-style: none;
     margin-left: 20px;
 }
@@ -72,17 +76,17 @@ header{
     color: white;
     font-size: 36px;
     position: absolute;
-    right: 10px;
-    top: 20px;
+    right: 0.73vw;
+    top: 3.2vh;
     display: none;
 }
 
 .banner_top{
     overflow: hidden;
     background-color: #1760B3;
-    background-image: url('img/novos+canais+claro+tv+2013.png');
+    background-image: url('img/fundo-header.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 700px;
 }
 
@@ -150,7 +154,7 @@ header{
 
 .img_mobile--header{
     min-width: 720px;
-    background-image: url('img/lll.png');
+    background-image: url('img/img_mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -160,6 +164,7 @@ header{
 }
 
 main{
+    color: white;
     background-color: #1760B3;
     max-width: 1920px;
     display: flex;
@@ -169,9 +174,8 @@ main{
 }
 
 .container_services{
-
     width: 100%;
-    height: 150px;
+    height: 15vh;
     align-items: center;
     text-align: center;
 }
@@ -181,7 +185,6 @@ main{
 }
 
 .popo{
-
     flex-wrap: wrap;
     justify-content: space-evenly;
     display: flex;
@@ -209,10 +212,171 @@ button:focus ~ .top_menu--ul{
     height: 100%;
 }
 
+.container_web--platform{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.web_plataform--text{
+    margin-left: 40px;
+    max-width: 40%;
+}
+
+.web_plataform--text button{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: #F88524;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.web_plataform--text button:hover{
+    background-color: orangered;
+    color: black;
+    transition: all 0.5s;
+    font-weight: 800;
+}
+
+.web_plataforma--img{
+    overflow: hidden;
+}
+
+.container_plans{
+    padding-top: 20vh;
+}
+
+.plans_text{
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.plans_text h3:hover{
+    color: black;
+    background-color: #F88524;
+    opacity: 0.8;
+    transition: all 0.9s;
+}
+
+.plans_text p{
+    margin-top: 20px;
+}
+
+.our_plans{
+    align-items: baseline;
+    padding-top: 10vh;
+    display: flex;
+    background-color: #1760B3;
+    justify-content: space-around;
+}
+
+.plan_price{
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+    color: black;
+}
+
+.plan_monthly{
+    margin-top: 2vh;
+    border-radius: 5px;
+    background-color: #F88524;
+    width: 200px;
+}
+
+.plan_monthly--list{
+    width: 90%;
+}
+
+.plan_monthly--list ul{
+    height: 100%;
+}
+
+.plan_monthly--list li{
+    height: 90%;
+    margin-left: 25px;
+    margin-top: 1vh;
+}
+
+.plan_monthly--list li:hover{
+    background-color: orangered;
+    color: black;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.plan_quarterly{
+    margin-top: 2vh;
+    border-radius: 5px;
+    background-color: #F88524;
+    width: 200px;
+}
+
+.plan_quarterly--list{
+    width: 90%;
+}
+
+.plan_quarterly--list ul{
+    height: 100%;
+}
+
+.plan_quarterly--list li{
+    height: 90%;
+    margin-left: 25px;
+    margin-top: 1vh;
+}
+
+.plan_quarterly--list li:hover{
+    background-color: orangered;
+    color: black;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.plan_sani--annul{
+    margin-top: 2vh;
+    border-radius: 5px;
+    background-color: #F88524;
+    width: 200px;
+}
+
+.plan_sani--annul---list{
+    width: 90%;
+}
+
+.plan_sani--annul---list ul{
+    height: 100%;
+}
+
+.plan_sani--annul---list li{
+    height: 90%;
+    margin-left: 25px;
+    margin-top: 1vh;
+}
+
+.plan_sani--annul---list li:hover{
+    background-color: orangered;
+    color: black;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.signature_plan--btn{
+    cursor: pointer;
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 200px;
+}
+
 @media(max-width:720px){
 
     header{
-        min-width: 256px;
+        min-width: 300px;
     }
 
     .top_header{
@@ -277,7 +441,11 @@ button:focus ~ .top_menu--ul{
     }
 
     main{
-        min-width: 256px;
+        min-width: 300px;
+    }
+
+    .container_services{
+        height: 30vh;
     }
 
     .popo{
@@ -286,9 +454,33 @@ button:focus ~ .top_menu--ul{
     }
 
     .papa{
-        max-width: 1220px;
-        width: 80%;
-
+        width: 40%;
         margin-left: 20px;
+    }
+
+    .container_web--platform{
+        flex-direction: column;
+    }
+
+    .web_plataform--text{
+        margin-left: 40px;
+        max-width: 80%;
+    }
+
+    .web_plataforma--img img{
+
+        margin-top: 20px;
+        width: 95vw;
+    }
+
+    .logo{
+        position: relative;
+        top: 10px;
+        right: 33vw;
+    }
+
+    .our_plans{
+        flex-direction: column;
+        align-items: center;
     }
 }
