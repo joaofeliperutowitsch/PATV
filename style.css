@@ -249,7 +249,7 @@ button:focus ~ .top_menu--ul{
 }
 
 .plans_text{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-items: center;
     text-align: center;
 }
@@ -373,6 +373,181 @@ button:focus ~ .top_menu--ul{
     width: 200px;
 }
 
+.container_tv--box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.tv_box--text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.tv_box--text p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tv_box--list{
+    width: 50vw;
+    border-radius: 10px;
+    background-color: #F88524;
+}
+
+.tv_box--list img{
+    width: 50vw;
+    border-radius: 10px;
+}
+
+.tv_box--list ul{
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.tv_box--list li:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+
+.tv_box--list---prominence{
+    color: #1760B3;
+}
+
+.tv_box--btn{
+    cursor: pointer;
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+    font-weight: 900;
+    margin-top: 10px;
+    width: 40vw;
+}
+
+.container_doubts--plans{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+
+.container_doubts--plans h3{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.box_doubts--plans{
+    width: 80%;
+}
+
+.text_doubts{
+    margin-top: 20px;
+}
+
+.text_doubts summary{
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: #F88524;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.text_doubts p{
+    font-size: 1.3rem;
+    background-color: darkblue;
+}
+
+footer{
+    min-width: 300px;
+    background-color: #F88524;
+    padding: 70px 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 1.3rem;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 800;
+    position: relative;
+}
+
+.footer-col h4:hover{
+    cursor: pointer;
+    color: darkblue;
+}
+
+.footer-col h4::before{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: orangered;
+    height: 4px;
+    width: 0;
+    transition: 0.5s;
+}
+
+.footer-col h4:hover::before{
+    width: 30%;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: darkblue;
+    padding-left: 8px;
+}
+
+.social_links{
+    display: inline-block;
+}
+
+.social_links a{
+    margin-right: 10px;
+}
+
+.social_links img{
+    border-radius: 50%;
+    width: 25px;
+    height: 30px;
+}
+
 @media(max-width:720px){
 
     header{
@@ -381,7 +556,7 @@ button:focus ~ .top_menu--ul{
 
     .top_header{
         background-color: #F88524;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .container_top--menu{
@@ -475,12 +650,21 @@ button:focus ~ .top_menu--ul{
 
     .logo{
         position: relative;
-        top: 10px;
+        top: 0px;
         right: 33vw;
     }
 
     .our_plans{
         flex-direction: column;
         align-items: center;
+    }
+
+    .footer-col{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+    .footer-col h4{
+        font-size: 0.84rem;
     }
 }
