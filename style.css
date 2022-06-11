@@ -555,7 +555,7 @@ footer ul{
 
 .Copyright{
     position: relative;
-    top: 8vh;
+    top: 5vh;
     font-weight: 200;
     align-items: center;
     text-align: center;
@@ -585,6 +585,7 @@ footer ul{
 @media(max-width:720px){
 
     header{
+        overflow: hidden;
         min-width: 300px;
     }
 
@@ -595,9 +596,8 @@ footer ul{
     }
 
     .container_top--menu{
-        overflow: hidden;
         margin-bottom: 30vh;
-        width: 102vw;
+        width: 103vw;
         height: 20vh;
         align-items: flex-start;
     }
