@@ -43,19 +43,20 @@ header{
 }
 
 .big_screen--browser a{
+    color: white;
     text-decoration: none;
 }
 
 .big_screen--browser li{
-    color: white;
     font-size: 1.5rem;
     list-style: none;
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.big_screen--browser li:hover{
+.big_screen--browser a:hover{
     color: #1760B3;
-    cursor: pointer;
+    transition: all 0.8s;
 }
 
 .free_trial--btn{
@@ -173,38 +174,38 @@ main{
     flex-direction: column;
 }
 
-.container_services{
+.container_services--text{
     width: 100%;
-    height: 15vh;
     align-items: center;
     text-align: center;
 }
 
-.container_services article{
+.container_services--text article{
     font-size: 1.5rem;
+    padding: 10px;
 }
 
-.popo{
+.box_services{
     flex-wrap: wrap;
     justify-content: space-evenly;
     display: flex;
 }
 
-.papa{
+.service{
     background-color: #F88524;
     max-width: 1220px;
     width: 30%;
     padding: 4vh;
 }
 
-.papa img{
+.service img{
     margin-left: 3vw;
     flex-wrap: wrap;
     align-items: center;
     width: 50px;
 }
 
-.papa:hover{
+.service:hover{
     background-color: orangered;
 }
 
@@ -469,7 +470,8 @@ footer{
     padding: 70px 0;
 }
 
-.container{
+.container_footer{
+    justify-content: space-evenly;
     max-width: 1170px;
     margin: auto;
     display: flex;
@@ -477,12 +479,12 @@ footer{
     align-items: baseline;
 }
 
-ul{
+footer ul{
     list-style: none;
 }
 
 .footer-col{
-    width: 25%;
+    width: 20%;
     padding: 0 15px;
 }
 
@@ -517,7 +519,7 @@ ul{
 }
 
 .footer-col ul li a{
-    font-size: 16px;
+    font-size: 15px;
     text-transform: capitalize;
     color: white;
     text-decoration: none;
@@ -549,6 +551,35 @@ ul{
 .social_links img:hover{
     background-color: white;
     opacity: 0.5;
+}
+
+.Copyright{
+    position: relative;
+    top: 8vh;
+    font-weight: 200;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.Copyright:hover{
+    color: darkblue;
+}
+
+.Copyright::before{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: orangered;
+    height: 6px;
+    width: 0;
+    transition: 1s;
+}
+
+.Copyright:hover::before{
+    width: 70%;
 }
 
 @media(max-width:720px){
@@ -623,16 +654,16 @@ ul{
         min-width: 300px;
     }
 
-    .container_services{
-        height: 30vh;
+    .container_services--text{
+        padding: 20px;
     }
 
-    .popo{
+    .box_services{
         flex-direction: column;
         align-items: center;
     }
 
-    .papa{
+    .service{
         width: 40%;
         margin-left: 20px;
     }
@@ -670,5 +701,9 @@ ul{
 
     .footer-col h4{
         font-size: 0.84rem;
+    }
+
+    .footer-col ul li a{
+        font-size: 12px;
     }
 }
